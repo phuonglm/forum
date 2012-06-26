@@ -2,11 +2,6 @@
  * Search Ip Ban using REST service
  * 
  */
-
-eXo.require("eXo.core.JSON");
-eXo.require("eXo.core.Keyboard");
-
-
 function AjaxHandler(callbackObject, action) {
   this.LOADING_STATE = 'LOADING';
   this.SUCCESS_STATE = 'SUCCESS';

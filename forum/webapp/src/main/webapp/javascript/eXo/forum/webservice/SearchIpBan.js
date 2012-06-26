@@ -3,8 +3,6 @@
  * 
  */
 
-eXo.require("eXo.core.JSON");
-
 function AjaxHandler(callbackObject, action) {
   this.LOADING_STATE = 'LOADING';
   this.SUCCESS_STATE = 'SUCCESS';

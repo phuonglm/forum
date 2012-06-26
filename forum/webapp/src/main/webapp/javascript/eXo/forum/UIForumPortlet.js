@@ -871,7 +871,7 @@ UIForumPortlet.prototype.setTagContainerWidth = function(container){
 UIForumPortlet.prototype.executeLink = function(evt) {
   var onclickAction = String(this.getAttribute("rel")) ;
 	eval(onclickAction) ;
-	eXo.core.EventManager.cancelEvent(evt);
+  eXo.ks.EventManager.cancelEvent(evt);
 	return false;
 } ;
 
@@ -991,7 +991,7 @@ UIForumPortlet.prototype.submitOnKey = function(event){
 			var link = String(searchLinkElm.href) ;
 			link = link.replace("javascript:", "");
 			eval(link);
-			eXo.core.EventManager.cancelEvent(event);
+      eXo.ks.EventManager.cancelEvent(event);
 			return false;
 		}
 	}

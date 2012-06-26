@@ -18,10 +18,10 @@
   
   def rcontext = _ctx.getRequestContext() ;
   JavascriptManager jsmanager = rcontext.getJavascriptManager();
-  jsmanager.importJavascript('eXo.forum.webservice.SearchTagName', '/forum/javascript/') ;
-  jsmanager.importJavascript('Scripts.shLoadConfig', '/forumResources/syntaxhighlighter/');
+
   jsmanager.addJavascript('eXo.forum.webservice.SearchTagName.init();') ;
-  
+  jsmanager.loadScriptResource("forumResources-syntaxhighlighter");
+
   jsmanager.addOnResizeJavascript('eXo.forum.UIForumPortlet.reSizeImages');
   jsmanager.addJavascript("eXo.forum.UIForumPortlet.controlWorkSpace();");
   jsmanager.addOnLoadJavascript('eXo.forum.UIForumPortlet.ReloadImage');
